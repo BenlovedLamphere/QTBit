@@ -38,7 +38,7 @@ export default () => (
             <Route path="/register" component={createComponent(Register)}/>
             <Route path="/myaccount" component={createComponent(MyAccount)}/>
             <Route path="/productlist" component={createComponent(ProductList)}/>
-            <Route path="/product" component={createComponent(Product)}/>
+            <Route path={`/product/:number`} component={createComponent(Product)}/>
             <Route path="/mycart" component={createComponent(MyCart)}/>
             <Route path="/myorder" component={createComponent(MyOrder)}/>
             <Route path="/myinvite" component={createComponent(MyInvite)}/>
