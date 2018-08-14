@@ -1,0 +1,117 @@
+.bigbg {
+	width:100vw;
+	height: 100vh;
+	background: url(./img/login_bg.png) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	.loginBox {
+		width:480px;
+		height: 480px;
+		background: #fff;
+		border-radius: 14px;
+		box-shadow: 0 0 10px #d4deeb;
+		display: flex;
+		flex-direction:column;
+		justify-content:start;
+		align-items:center;
+		.rowTitle {
+			width:372px;
+			height: 40px;
+			display: flex;
+			justify-content:space-between;
+			margin-top:50px;
+			h1 {
+				font-size: 30px;
+				font-weight: 200;
+				color:#0c2f6b;
+			}
+		}
+		.row {
+			width:372px;
+			height: 40px;
+			border-bottom:1px #d4deeb solid;
+			display: flex;
+			justify-content:space-between;
+			margin-top: 32px;
+			p {
+				display: block;
+				width:60px;
+				font-size: 14px;
+				color:#0c2f6b;
+				font-weight: 200;
+				height: 40px;
+				line-height: 40px;
+				text-align: justify;
+				overflow: hidden;
+				span {
+					display: inline-block;
+					width:100%;
+				}
+			}
+			.input {
+				display: block;
+				width: 272px;
+				height: 40px;
+				text-indent: 20px;
+				line-height: 40px;
+			}
+			.inputCode {
+				display: block;
+				width: 150px;
+				height: 40px;
+				text-indent: 20px;
+				line-height: 40px;
+			}
+			.inputAfter {
+				width:40px;
+				height: 17px;
+				border-left:1px #d4deeb solid;
+				margin-top:12px;
+				img {
+					height: auto;
+					margin: 0 auto;
+				}
+			}
+			img {
+				height: 33px;
+			}
+		}
+		.submit {
+			width:372px;
+			height: 40px;
+			margin-top: 40px;
+			background: #2b91f3;
+			color:#fff;
+			font-size: 14px;
+			border-radius: 2px;
+		}
+		.rowRegister {
+			width:372px;
+			height: 40px;
+			margin-top: 30px;
+			display:flex;
+			justify-content:space-between;
+			a {
+				display: block;
+				font-size: 12px;
+				line-height: 12px;
+				height: 12px;
+				color:#0c2f6b;
+			}
+			.goReg {
+				display: flex;
+				justify-content:space-between;
+				p {
+					display: block;
+					color: #2b91f3;
+				}
+				img {
+					width:12px;
+					height: 12px;
+				}
+			}
+		}
+	}
+}

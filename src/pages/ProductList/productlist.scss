@@ -1,0 +1,100 @@
+.bigbg {
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	.bigul {
+		width: 1100px;
+		height: auto;
+		display: flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+	}
+
+	.bigli {
+		display: block;
+		width: 520px;
+		height: 650px;
+		border:1px #eaf1f9 solid;
+		border-radius: 2px;
+		margin-bottom: 40px;
+		.bigimg {
+			width: 460px;
+			height: 350px;
+			margin: 30px auto;
+		}
+		h2 {
+			font-size: 26px;
+			color:#0c2f6b;
+			text-indent: 30px;
+		}
+		h3 {
+			display: block;
+			font-size: 18px;
+			color: #ec6408;
+			text-indent: 30px;
+			margin: 20px 0 ;
+		}
+		.descBox {
+			width: 460px;
+			margin: 0 auto;
+			display: flex;
+			justify-content:space-between;
+			li {
+				display: flex;
+				justify-content:space-between;
+				margin: 20px 0 ;
+				h4 {
+					font-size: 16px;
+					color: #9fadc4;
+					margin-right: 22px;
+				}
+				input {
+					display: block;
+					width: 110px;
+					height: 26px;
+					border: 1px #9fadc4 solid;
+					border-radius: 2px;
+					color:#0c2f68;
+					font-size: 16px;
+					text-align: center;
+				}
+				.addndecre {
+					display: flex;
+					justify-content:space-between;
+					.btn {
+						display: block;
+						width: 30px;
+						height: 26px;
+						background: #f1f5ff;
+					}
+					.nums {
+						display: block;;
+						height: 25px;
+						width: 50px;
+					}
+				}
+			}
+			.addToCart {
+				display: inline-block;
+				width: 160px;
+				height: 40px;
+				border-radius: 4px;
+				text-align: center;
+				font-size: 18px;
+				line-height: 40px;
+				margin-top: 50px;
+				background: #2b92f3;
+				color: #fff;
+				display: flex;
+				justify-content:center;
+				align-items:center;
+				img {
+					width: 22px;
+					height: 18px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+

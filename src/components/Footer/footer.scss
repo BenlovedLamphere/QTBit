@@ -1,0 +1,61 @@
+.bigbg {
+	width: 100%;
+	height: auto;
+	background: #faf9ff;
+	margin: 0;
+	padding: 0;
+	.oneonebg {
+		width: 1100px;
+		height: 65px;
+		padding-top: 25px;
+		margin: 0 auto;
+		display: flex;
+		justify-content:space-between;
+		position: relative;
+		.leftPart {
+			display: flex;
+			justify-content:flex-start;
+			font-size: 14px;
+			color:#14286d;
+			margin-top: 40px;
+			li {
+				display: block;
+				width: 180px;
+				dt {
+					height: 48px;
+				}
+			}
+		}
+		.rightPart {
+			display: block;
+			margin-top: 40px;
+			color: #14286d;
+			text-align: right;
+			.telWord {
+				font-size: 14px;
+
+			}
+			.telNum {
+				display: block;
+				font-size: 24px;
+				margin: 20px 0;
+			}
+			dl {
+				display: flex;
+				justify-content:flex-end;
+				margin: 20px 0;
+				dd {
+					display: block;
+					margin-left: 20px;
+				}
+			}
+		}
+		.copyRight {
+			display: block;
+			font-size: 12px;
+			height: 20px;
+			margin-top: 10px;
+			color: #14286d;
+		}
+	}
+}

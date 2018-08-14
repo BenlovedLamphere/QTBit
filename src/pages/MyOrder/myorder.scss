@@ -1,0 +1,366 @@
+.bigbody {
+	width: 1100px;
+	height: auto;
+	background: #fff;
+	box-shadow: 0 5px 10px #d4deeb;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-between;
+	.right {
+		width: 895px;
+		height: auto;
+		border-left:1px #eaf1f9 solid;
+		padding: 40px 28px;
+		h2 {
+			display: block;
+			width: 100%;
+			height: 46px;
+			line-height: 46px;
+			font-size: 20px;
+			color: #0c2f6b;
+			margin-bottom: 10px;
+		}
+		.tabs {
+			width: 819px;
+			height: 50px;
+			display: flex;
+			justify-content:flex-start;
+			border-bottom: 1px #eaf1f9 solid;
+			padding-left: 20px;
+			li {
+				width: 120px;
+				height: 50px;
+				text-align: center;
+				a {
+					width: 120px;
+					height: 50px;
+					line-height: 50px;
+					color: #9fadc4;
+				}
+				a:hover {
+					display: block;
+					width: 120px;
+					height: 50px;
+					line-height: 50px;
+					color: #2b92f3;
+					border-bottom: 2px #2b92f3 solid;
+				}
+			}
+		}
+		.allOrder {
+			width: 849px;
+			height: auto;
+			padding-top: 20px;
+			border-collapse: collapse;
+			.title {
+				width: 849px;
+				height: 40px;
+				background: #eef5fe;
+				display: flex;
+				justify-content:space-between;
+				margin-top: 20px;
+				li {
+					display: block;
+					padding: 0 20px;
+					height: 40px;
+					line-height: 40px;
+					font-size: 14px;
+				}
+				.col9fa {
+					color: #9fadc4;
+				}
+				.col0c2 {
+					color: #0c2f6b;
+				}
+			}
+			.order {
+				width: 849px;
+				height: auto;
+				border-left:1px #eaf1f9 solid;
+				tr {
+					height: 110px;
+				}
+				td {
+					text-align: center;
+					border-right:1px #eaf1f9 solid;
+					border-bottom:1px #eaf1f9 solid;
+					.p16 {
+						font-size: 16px;
+						color: #0c2f6b;
+						height: 30px;
+						line-height: 30px;
+					}
+					.p14 {
+						font-size: 14px;
+						color: #9fadc4;
+						height: 30px;
+						line-height: 30px;
+						a {
+							color: #2b92f3;
+							font-size: 14px;
+						}
+						.blueBtn {
+							display: inline-block;
+							width: 120px;
+							height: 30px;
+							border-radius: 4px;
+							text-align: center;
+							font-size: 14px;
+							line-height: 30px;
+							margin: 0;
+							padding: 0;
+							background: #2b92f3;
+							color: #fff;
+						}
+					}
+					.paydedTd {
+						font-size: 16px;
+						color: #9fadc4;
+						height: 30px;
+						line-height: 30px;
+						span {
+							color:#0c2f6b;
+						}
+					}
+					input {
+						font-size: 14px;
+						color: #0c2f6b;
+					}
+					.aliPay {
+						margin-left: 20px;
+					}
+				}
+				.goodsTitle {
+					display: flex;
+					justify-content:flex-start;
+					padding-left: 10px;
+					dt {
+						img {
+							width: 62px;
+							height: 62px;
+						}
+					}
+					dd {
+						p {
+							display: block;
+							text-align: left;
+							height: 30px;
+							line-height: 30px;
+							text-indent: 10px;
+						}
+					}
+				}
+			}
+		}
+		.waitPay {
+			width: 849px;
+			height: auto;
+			padding-top: 20px;
+			border-collapse: collapse;
+			.title {
+				width: 849px;
+				height: 40px;
+				background: #eef5fe;
+				display: flex;
+				justify-content:space-between;
+				margin-top: 20px;
+				li {
+					display: block;
+					padding: 0 20px;
+					height: 40px;
+					line-height: 40px;
+					font-size: 14px;
+				}
+				.col9fa {
+					color: #9fadc4;
+				}
+				.col0c2 {
+					color: #0c2f6b;
+				}
+			}
+			.order {
+				width: 849px;
+				height: auto;
+				border-left:1px #eaf1f9 solid;
+				tr {
+					height: 110px;
+				}
+				td {
+					text-align: center;
+					border-right:1px #eaf1f9 solid;
+					border-bottom:1px #eaf1f9 solid;
+					.p16 {
+						font-size: 16px;
+						color: #0c2f6b;
+						height: 30px;
+						line-height: 30px;
+					}
+					.p14 {
+						font-size: 14px;
+						color: #9fadc4;
+						height: 30px;
+						line-height: 30px;
+						a {
+							color: #2b92f3;
+							font-size: 14px;
+						}
+						.blueBtn {
+							display: inline-block;
+							width: 120px;
+							height: 30px;
+							border-radius: 4px;
+							text-align: center;
+							font-size: 14px;
+							line-height: 30px;
+							margin: 0;
+							padding: 0;
+							background: #2b92f3;
+							color: #fff;
+						}
+					}
+					.paydedTd {
+						font-size: 16px;
+						color: #9fadc4;
+						height: 30px;
+						line-height: 30px;
+						span {
+							color:#0c2f6b;
+						}
+					}
+					input {
+						font-size: 14px;
+						color: #0c2f6b;
+					}
+					.aliPay {
+						margin-left: 20px;
+					}
+				}
+				.goodsTitle {
+					display: flex;
+					justify-content:flex-start;
+					padding-left: 10px;
+					dt {
+						img {
+							width: 62px;
+							height: 62px;
+						}
+					}
+					dd {
+						p {
+							display: block;
+							text-align: left;
+							height: 30px;
+							line-height: 30px;
+							text-indent: 10px;
+						}
+					}
+				}
+			}
+		}
+		.paydedOrder {
+			width: 849px;
+			height: auto;
+			padding-top: 20px;
+			border-collapse: collapse;
+			.title {
+				width: 849px;
+				height: 40px;
+				background: #eef5fe;
+				display: flex;
+				justify-content:space-between;
+				margin-top: 20px;
+				li {
+					display: block;
+					padding: 0 20px;
+					height: 40px;
+					line-height: 40px;
+					font-size: 14px;
+				}
+				.col9fa {
+					color: #9fadc4;
+				}
+				.col0c2 {
+					color: #0c2f6b;
+				}
+			}
+			.order {
+				width: 849px;
+				height: auto;
+				border-left:1px #eaf1f9 solid;
+				tr {
+					height: 110px;
+				}
+				td {
+					text-align: center;
+					border-right:1px #eaf1f9 solid;
+					border-bottom:1px #eaf1f9 solid;
+					.p16 {
+						font-size: 16px;
+						color: #0c2f6b;
+						height: 30px;
+						line-height: 30px;
+					}
+					.p14 {
+						font-size: 14px;
+						color: #9fadc4;
+						height: 30px;
+						line-height: 30px;
+						a {
+							color: #2b92f3;
+							font-size: 14px;
+						}
+						.blueBtn {
+							display: inline-block;
+							width: 120px;
+							height: 30px;
+							border-radius: 4px;
+							text-align: center;
+							font-size: 14px;
+							line-height: 30px;
+							margin: 0;
+							padding: 0;
+							background: #2b92f3;
+							color: #fff;
+						}
+					}
+					.paydedTd {
+						font-size: 16px;
+						color: #9fadc4;
+						height: 30px;
+						line-height: 30px;
+						span {
+							color:#0c2f6b;
+						}
+					}
+					input {
+						font-size: 14px;
+						color: #0c2f6b;
+					}
+					.aliPay {
+						margin-left: 20px;
+					}
+				}
+				.goodsTitle {
+					display: flex;
+					justify-content:flex-start;
+					padding-left: 10px;
+					dt {
+						img {
+							width: 62px;
+							height: 62px;
+						}
+					}
+					dd {
+						p {
+							display: block;
+							text-align: left;
+							height: 30px;
+							line-height: 30px;
+							text-indent: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

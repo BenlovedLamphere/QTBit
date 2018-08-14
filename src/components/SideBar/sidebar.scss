@@ -1,0 +1,31 @@
+.left {
+	width: 200px;
+	height: auto;
+	padding-top: 40px;
+	li {
+		width: 200px;
+		height: 46px;
+		a {
+			display: block;
+			width: 198px;
+			height: 46px;
+			line-height: 46px;
+			text-indent: 80px;
+			font-size: 16px;
+			color:#0c2f6b;
+			font-weight: 200;
+		}
+		a:hover {
+			background: #eef5fe;
+			border-right: 2px #2b92f3 solid;
+			color: #2b92f3;
+		}
+
+	}
+}
+
+.onHover {
+	background: #eef5fe;
+	border-right: 2px #2b92f3 solid;
+	color: #2b92f3;
+}
