@@ -2,14 +2,11 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
 import {connect} from 'react-redux';
-import {getwords} from "actions/login";
+import {getlogin} from "actions/login";
 
 import style from './login.scss';
 
 class Login extends Component {
-
-
-
 
 
     componentDidMount() {
@@ -19,13 +16,20 @@ class Login extends Component {
     }
 
 
+    checkLoginData () {
+        let email = this.refs.email.value;
+        let password = this.refs.password.value;
+        let code = this.refs.code.value;
+
+        let data = {email:email,password:password,code:code};
+
+        this.props.getlogin(data)
+
+    }
+
+
 
     render() {
-        console.log (this.props.wordstext.words.hitokoto)
-
-        if (this.props.wordstext.hitokoto) {
-            alert(this.props.wordstext.words.hitokoto)
-        }
 
 
         return (
@@ -37,21 +41,21 @@ class Login extends Component {
             		</div>
             		<div className = {style.row}>
 						<p>邮箱<span></span></p>            		
-            			<input className = {style.input} placeholder = '请输入邮箱' />
+            			<input ref = 'email' className = {style.input} placeholder = '请输入邮箱' />
             			<div className = {style.inputAfter}><img src = {require('./img/email_icon.png')}/></div>
             		</div>
             		<div className = {style.row}>
 						<p>密码<span></span></p>            		
-            			<input className = {style.input} placeholder = '请输入密码' />
+            			<input ref = 'password' className = {style.input} placeholder = '请输入密码' />
             			<div className = {style.inputAfter}><img src = {require('./img/lock_icon.png')}/></div>
             		</div>
             		<div className = {style.row}>
 						<p>验证码<span></span></p>            		
-            			<input className = {style.inputCode} placeholder = '请输入密码' />
+            			<input ref = 'code' className = {style.inputCode} placeholder = '请输入密码' />
             			<div className = {style.inputAfter}><img src = {require('./img/safe_icon.png')}/></div>
             			<img src = {require ('./img/code.jpg')} />
             		</div>
-            		<button className = {style.submit} onClick = {()=>{this.props.getwords('5')}}> 立即登录 </button>
+            		<button className = {style.submit} onClick = {()=>{this.checkLoginData()}}> 立即登录 </button>
             		<div className = {style.rowRegister}>
             			<Link to = ''>忘记密码？</Link>
             			<Link className = {style.goReg} to = '/register/'><p>注册帐号</p><img src = {require('./img/go_icon.png')}/></Link>
@@ -71,8 +75,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        getwords: (num) => {
-            dispatch(getwords(num))
+        getlogin: (data) => {
+            dispatch(getlogin(data))
         }
     }
 };

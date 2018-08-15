@@ -5,6 +5,7 @@ import userInfo from 'reducers/userInfo';
 import login from 'reducers/login';
 import productlist from 'reducers/productlist';
 import product from 'reducers/product';
+import register from 'reducers/register';
 
 
 export default combineReducers({
@@ -12,5 +13,6 @@ export default combineReducers({
     userInfo,
     login,
     productlist,
-    product
+    product,
+    register
 });
