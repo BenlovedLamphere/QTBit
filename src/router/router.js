@@ -18,6 +18,7 @@ import Product from 'bundle-loader?lazy&name=product!pages/Product/Product';
 import MyCart from 'bundle-loader?lazy&name=mycart!pages/MyCart/MyCart';
 import MyOrder from 'bundle-loader?lazy&name=myorder!pages/MyOrder/MyOrder';
 import MyInvite from 'bundle-loader?lazy&name=myinvite!pages/MyInvite/MyInvite';
+import ForgotPwd from 'bundle-loader?lazy&name=forgotpwd!pages/ForgotPwd/ForgotPwd';
 
 const createComponent = (component) => (props) => (
     <Bundle load={component}>
@@ -42,6 +43,7 @@ export default () => (
             <Route path="/mycart" component={createComponent(MyCart)}/>
             <Route path="/myorder" component={createComponent(MyOrder)}/>
             <Route path="/myinvite" component={createComponent(MyInvite)}/>
+            <Route path="/forgotpwd" component={createComponent(ForgotPwd)}/>
             <Route component={createComponent(NotFound)}/>
         </Switch>
     </div>
