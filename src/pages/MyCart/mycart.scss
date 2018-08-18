@@ -162,7 +162,34 @@
 				}
 			}
 		}
-
-
 	}
 }
+
+.emptyBox {
+	img {
+		margin: 80px  auto 0 auto;
+	}
+	h4 {
+		display: block;
+		width: 350px;
+		height: 100px;
+		margin: 40px  auto 0 auto;
+		text-align: center;
+		color: #9fadc4;
+		font-size: 22px;
+	}
+	.goShoping {
+		display: block;
+		width: 180px;
+		height: 36px;
+		border-radius: 4px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 36px;
+		background: #2b92f3;
+		color: #fff;
+		margin:0 auto 100px auto;
+	}
+}
+
+

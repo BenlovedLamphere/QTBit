@@ -24,7 +24,7 @@ class ProductList extends Component {
                                 <ul>
                                     <li>
                                         <h4>租赁数量</h4>
-                                        <p className = {style.addndecre}><input className = {style.btn} type = "button" defaultValue = "-"/><input className = {style.nums} defaultValue = '1'/><input className = {style.btn} type = "button" defaultValue = "+" /></p>
+                                        <p className = {style.addndecre}><input className = {style.btn} type = "button" defaultValue = "-"/><input ref = {elt.id} className = {style.nums} defaultValue = '1'/><input className = {style.btn} type = "button" defaultValue = "+" /></p>
                                     </li>
                                     <li>
                                         <h4>租赁时间</h4>

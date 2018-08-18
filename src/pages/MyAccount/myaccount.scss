@@ -19,6 +19,14 @@
 			font-size: 20px;
 			color: #0c2f6b;
 			margin-bottom: 10px;
+			border-bottom:1px #eaf1f9 solid;
+		}
+		.titleSelect {
+			display: flex;
+			justify-content:flex-start;
+			h2 {
+				width: 120px;
+			}
 		}
 		.itemBox {
 			width: 810px;
@@ -131,13 +139,34 @@
 						color: #fff;
 						margin-top:10px;
 					}
-
-
 				}
-
-
 			}
-
+			.turnOver {
+				th {
+					width: 25%;
+				}
+				td {
+					height: 60px;
+				}
+			}
 		}
 	}
 }
+
+
+.Select {
+	display: block;
+	width: 90px;
+	height: 26px;
+	margin-top: 10px;
+
+	border-radius: 4px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 26px;	
+	height: 24px;
+	border:1px #2b92f3 solid;
+	color: #2b92f3;
+}
+
+

@@ -27,7 +27,6 @@ export default class ForgotPwd extends Component {
         console.log (this.state)
 
 
-
         switch (this.state.step) {
             case 1:
                 aStepDom =  <div className = 'example' key = {this.state.step}>
