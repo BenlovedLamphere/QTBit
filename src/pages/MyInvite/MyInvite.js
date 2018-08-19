@@ -33,7 +33,6 @@ export default class MyInvite extends Component {
         						</li>
         					</ul>
         				</div>
-
         				<div className = {style.tableBox}>
         					<div className = {style.leftTable}>
         						<h3>已邀好友</h3>

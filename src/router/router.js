@@ -13,6 +13,7 @@ import NotFound from 'bundle-loader?lazy&name=notFound!pages/NotFound/NotFound';
 import Login from 'bundle-loader?lazy&name=login!pages/Login/Login';
 import Register from 'bundle-loader?lazy&name=register!pages/Register/Register';
 import MyAccount from 'bundle-loader?lazy&name=myaccount!pages/MyAccount/MyAccount';
+import Withdrawal from 'bundle-loader?lazy&name=withdrawal!pages/MyAccount/Withdrawal';
 import TurnOver from 'bundle-loader?lazy&name=turnover!pages/MyAccount/TurnOver';
 import ProductList from 'bundle-loader?lazy&name=productlist!pages/ProductList/ProductList';
 import Product from 'bundle-loader?lazy&name=product!pages/Product/Product';
@@ -48,6 +49,7 @@ export default () => (
             <Route path="/login" component={createComponent(Login)}/>
             <Route path="/register" component={createComponent(Register)}/>
             <Route path="/myaccount" component={createComponent(MyAccount)}/>
+            <Route path="/withdrawal" component={createComponent(Withdrawal)}/>
             <Route path="/turnover" component={createComponent(TurnOver)}/>
             <Route path="/productlist" component={createComponent(ProductList)}/>
             <Route path={`/product/:number`} component={createComponent(Product)}/>
