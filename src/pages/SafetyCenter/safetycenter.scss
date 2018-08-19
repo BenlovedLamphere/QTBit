@@ -203,6 +203,19 @@
 				font-size: 16px;
 				color:#0c2f6b;
 			}
+			dd {
+				display: block;
+				position: relative;
+				.updateStyle {
+					display: block;
+					width: 340px;
+					height: 200px;
+					position: absolute;
+					top: 0;
+					z-index: 9;
+					opacity:0;
+				}
+			}
 		}
 	}
 }

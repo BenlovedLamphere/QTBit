@@ -10,16 +10,28 @@ import style from './safetycenter.scss';
 
 class Certification extends Component {
 
-    updateAll () {
-        // let form = this.refs.idRef;
-        // let formData = new FormData (form);
+    constructor(props) {
+        super(props);
+        this.state = {
+          setIdUrl: '',
+        };
+    }
 
-        let files = this.refs.img1.files;
 
-        this.props.uploadId(files);
+
+    setIdNum (value) {
+
+      let setidstate = this.state;
+      setidstate.setIdUrl = '/api/customer/applyidentity?idcardno=' + value;
+      this.setState(setidstate);
+
+
     }
 
     render() {
+
+      let updateUrl = this.state.setIdUrl;
+
         return (
         	<div>
         		<Header/>
@@ -33,10 +45,8 @@ class Certification extends Component {
                     <dd>2、请上传手持证件照片，照片中需附一张白纸<span>写有“钱通比特”和当前日期</span>，确保您的面部清晰可见，所有证件详细信息都清晰可读，否则将影响您的审核进度。</dd>
                   </dl>
                   <p className = {style.humanIdName}>护照/身份证号</p> 
-
-          <form ref = 'idRef' id="upload" encType="multipart/form-data" method="post"> 
-
-                  <input ref = 'handPhone' className = {style.humanId} placeholder = '请输入您的身份证号或护照号' />
+                  <form action={updateUrl} method="post" encType="multipart/form-data">
+                  <input ref = 'handPhone' onChange = {(e)=>{this.setIdNum(e.target.value)}} className = {style.humanId} placeholder = '请输入您的身份证号或护照号' />
                   <div className = {style.updateBox}>
                     <ul>
                       <li>
@@ -44,7 +54,7 @@ class Certification extends Component {
                           <dt>护照/身份证正面照片：</dt>
                           <dd>
                             <img src = {require('./img/update.png')}/>
-                            <input ref = 'img1' type = 'file' />
+                            <input className = {style.updateStyle} ref = 'img1' type = 'file' />
                           </dd>
                         </dl>
                       </li>
@@ -63,7 +73,7 @@ class Certification extends Component {
                           <dt>护照/身份证反面照片：</dt>
                           <dd>
                             <img src = {require('./img/update.png')}/>
-                            <input ref = 'img2' type = 'file' />
+                            <input className = {style.updateStyle}  ref = 'img2' type = 'file' />
                           </dd>
                         </dl>
                       </li>
@@ -82,7 +92,7 @@ class Certification extends Component {
                           <dt>手持护照/身份证照片：</dt>
                           <dd>
                             <img src = {require('./img/update.png')}/>
-                            <input ref = 'img3' type = 'file' />
+                            <input className = {style.updateStyle} ref = 'img3' type = 'file' />
                           </dd>
                         </dl>
                       </li>
@@ -96,9 +106,8 @@ class Certification extends Component {
                       </li>
                     </ul>
                   </div>
+                  <input className = {style.bigBlueBtn} type="submit" name="submit" value="提交"/>
 
-                  
-                  <button className = {style.bigBlueBtn} onClick = {()=>{this.updateAll()}} > 确定 </button>
           </form>
         			</div>
         		</div>
