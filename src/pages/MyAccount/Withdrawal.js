@@ -48,8 +48,6 @@ export default class Withdrawal extends Component {
                             </div>
                             <button className = {style.submit}> 确认提现 </button>
 
-
-
 {/*                            
                             <p className = {style.inputWords}>备注：建议上传带有付款人帐号/姓名，收款人帐号/号户名的流水单截图，方便财务核对您提交的打款信息。</p>
                             */}

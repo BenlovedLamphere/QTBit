@@ -3,9 +3,22 @@ import {Link} from 'react-router-dom';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import SideBar from 'components/SideBar/SideBar';
+import {connect} from 'react-redux';
+
+import {uploadId} from "actions/certification";
 import style from './safetycenter.scss';
 
-export default class Certification extends Component {
+class Certification extends Component {
+
+    updateAll () {
+        // let form = this.refs.idRef;
+        // let formData = new FormData (form);
+
+        let files = this.refs.img1.files;
+
+        this.props.uploadId(files);
+    }
+
     render() {
         return (
         	<div>
@@ -20,6 +33,9 @@ export default class Certification extends Component {
                     <dd>2、请上传手持证件照片，照片中需附一张白纸<span>写有“钱通比特”和当前日期</span>，确保您的面部清晰可见，所有证件详细信息都清晰可读，否则将影响您的审核进度。</dd>
                   </dl>
                   <p className = {style.humanIdName}>护照/身份证号</p> 
+
+          <form ref = 'idRef' id="upload" encType="multipart/form-data" method="post"> 
+
                   <input ref = 'handPhone' className = {style.humanId} placeholder = '请输入您的身份证号或护照号' />
                   <div className = {style.updateBox}>
                     <ul>
@@ -28,6 +44,7 @@ export default class Certification extends Component {
                           <dt>护照/身份证正面照片：</dt>
                           <dd>
                             <img src = {require('./img/update.png')}/>
+                            <input ref = 'img1' type = 'file' />
                           </dd>
                         </dl>
                       </li>
@@ -46,6 +63,7 @@ export default class Certification extends Component {
                           <dt>护照/身份证反面照片：</dt>
                           <dd>
                             <img src = {require('./img/update.png')}/>
+                            <input ref = 'img2' type = 'file' />
                           </dd>
                         </dl>
                       </li>
@@ -64,6 +82,7 @@ export default class Certification extends Component {
                           <dt>手持护照/身份证照片：</dt>
                           <dd>
                             <img src = {require('./img/update.png')}/>
+                            <input ref = 'img3' type = 'file' />
                           </dd>
                         </dl>
                       </li>
@@ -79,8 +98,8 @@ export default class Certification extends Component {
                   </div>
 
                   
-                  <button className = {style.bigBlueBtn} onClick = {()=>{this.goNext()}} > 确定 </button>
-
+                  <button className = {style.bigBlueBtn} onClick = {()=>{this.updateAll()}} > 确定 </button>
+          </form>
         			</div>
         		</div>
         		<Footer/>
@@ -89,3 +108,18 @@ export default class Certification extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        calledRst: state.certification
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        uploadId: (data) => {
+            dispatch(uploadId(data))
+        }
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Certification);

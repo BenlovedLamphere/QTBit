@@ -8,13 +8,11 @@ import style from './login.scss';
 
 class Login extends Component {
 
-
     componentDidMount() {
 
         //如果想静态页面第一次加载后自动请求接口，写在这里：
         //this.props.getwords('5');
     }
-
 
     checkLoginData () {
         let email = this.refs.email.value;
@@ -27,10 +25,7 @@ class Login extends Component {
 
     }
 
-
-
     render() {
-
 
         return (
             <div className={style.bigbg}>
