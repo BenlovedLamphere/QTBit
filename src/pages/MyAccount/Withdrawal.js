@@ -46,9 +46,13 @@ export default class Withdrawal extends Component {
 {/*                                <button className = {style.sendCode}> 发送验证码 </button>
 */}                                <img src = {require ('./img/code.jpg')} />
                             </div>
+                            <button className = {style.submit}> 确认提现 </button>
+
+
+
 {/*                            
                             <p className = {style.inputWords}>备注：建议上传带有付款人帐号/姓名，收款人帐号/号户名的流水单截图，方便财务核对您提交的打款信息。</p>
-                            <button className = {style.submit}> 确认支付 </button>*/}
+                            */}
                         </div>
                         <dl className = {style.remind}>
                             <dt><img src = {require('./img/remind.png')} /><p>声明</p></dt>
